@@ -1,0 +1,178 @@
+.footer{
+    background: #1c1c1c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 35px ;
+
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo p{
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.footer-link{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 20px;
+}
+
+.footer-link li {
+    cursor: pointer;
+    position: relative; /* Add this line for absolute positioning of the underline */
+}
+
+.footer-link li::after {
+    content: ''; /* Empty content for the underline */
+    position: absolute; /* Position the underline relative to the li */
+    left: 0; /* Start the underline from the left edge of the li */
+    bottom: -2px; /* Position the underline below the text */
+    width: 100%; /* Full width of the underline */
+    height: 2px; /* Height/thickness of the underline */
+    transition: background-color 0.5s ease; /* Smooth transition for the underline */
+}
+
+.footer-link li:hover::after {
+    background-color: #fff; /* Color of the underline on hover */
+}
+
+.footer-social-icons{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.footer-icons-container{
+    padding: 10px;
+    padding-bottom: 0px;
+    font-size: 30px;
+}
+
+.footer-icons-container:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+
+.footer-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    font-size: 17px;
+}
+
+.footer-copyright hr{
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #7a7676;
+}
+
+@media screen and (max-width: 1020px){
+    .footer-logo img{
+        width: 70px;
+    }
+    
+    .footer-logo p{
+        font-size: 36px;
+    }
+    
+    .footer-link{
+        font-size: 18px;
+    }
+}
+  
+  
+@media screen and (max-width: 900px){
+
+}
+  
+
+@media screen and (max-width: 750px){
+    .footer-logo img{
+        width: 60px;
+    }
+    
+    .footer-logo p{
+        font-size: 30px;
+    }
+    
+    .footer-link{
+        font-size: 16px;
+    }
+    
+    .footer-icons-container {
+        font-size: 28px;
+    }
+
+    .footer-copyright p{
+        font-size: 14px;
+    }
+}
+  
+@media screen and (max-width: 550px){
+    .footer-logo img{
+        width: 50px;
+    }
+    
+    .footer-logo p{
+        font-size: 25px;
+    }
+    
+    .footer-link{
+        padding: 0;
+        font-size: 12px;
+    }
+    
+    .footer-icons-container {
+        font-size: 25px;
+    }
+
+    .footer-copyright p{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .footer{
+        gap: 20px;
+    }
+
+    .footer-logo img{
+        width: 40px;
+    }
+    
+    .footer-logo p{
+        font-size: 20px;
+    }
+    
+    .footer-link{
+        padding: 0;
+        font-size: 11px;
+        gap: 30px;
+    }
+    
+    .footer-icons-container {
+        font-size: 20px;
+    }
+
+    .footer-copyright p{
+
+        font-size: 9px;
+    }
+}

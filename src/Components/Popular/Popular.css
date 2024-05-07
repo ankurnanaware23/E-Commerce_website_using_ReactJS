@@ -1,0 +1,90 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+}
+
+.popular h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+ 
+.popular hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular-item{
+    margin-top: 50px;
+    gap: 22px;
+    display: flex;
+}
+
+
+@media screen and (max-width: 1020px){
+    .popular{
+        height: 55vh;
+    }
+} 
+
+@media screen and (max-width: 900px){
+    .popular h1{
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .popular{
+        height: 90vh;
+    }
+
+    .popular h1{
+        font-size: 35px;
+    }
+
+    .popular-item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .popular-item .item{
+        width: 250px;
+    }
+
+    .popular-item .item p {
+        font-size: 15px;
+    }
+    
+    .popular-item .item .item-price-new {
+        font-size: 18px;
+    }
+
+    .popular-item .item .item-price-old {
+        font-size: 18px;
+    }
+}
+  
+@media screen and (max-width: 550px){
+    .popular-item .item{
+        width: 200px;
+    }
+
+    .popular-item{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .popular h1{
+        font-size: 30px;
+    }
+    
+    .popular-item .item{
+        width: 180px;
+    }
+}
